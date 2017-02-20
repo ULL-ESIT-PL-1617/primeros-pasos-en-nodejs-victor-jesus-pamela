@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introducción · GitBook</title>
+        <title>GH-Pages · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="chapter6.html" />
     
+    
+    <link rel="prev" href="chapter4.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -152,7 +154,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="chapter5.html">
+        <li class="chapter active" data-level="1.6" data-path="chapter5.html">
             
                 <a href="chapter5.html">
             
@@ -221,7 +223,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introducción</a>
+        <a href="." >GH-Pages</a>
     </h1>
 </div>
 
@@ -236,8 +238,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="tareas-iniciales">Tareas Iniciales</h1>
-<p>En este libro ser&#xE1;n descritas algunas de las tareas b&#xE1;sicas para poder empezar el desarrollo de las pr&#xE1;cticas de la asignatura Procesadores de Lenguajes. Algunas de estas tareas son: Instalaci&#xF3;n de herramientas necesarias, apertura de cuentas en servicios, entre otros.</p>
+                                <h1 id="gh-pages">GH-Pages</h1>
+<p>Gh-pages es un servicio ofrecido por github que te permite hostear una p&#xE1;gina web personal directamente de un repositorio, el cual puedes modificar para ver los cambios al instante.
+Adem&#xE1;s de esto te permite crear p&#xE1;ginas web para cada repositorio.</p>
+<h3 id="c&#xF3;mo-utilizar-gh-pages-de-usuario">C&#xF3;mo utilizar gh-pages de usuario</h3>
+<p>Para empezar a utilizar gh-pages lo &#xFA;nico que necesitas es crear un repositorio cuyo nombre siga la plantilla de &apos;nombre-usuario.github.io&apos; y subir all&#xED; tus html, css, assets, etc...
+Una vez hayas hecho esto lo &#xFA;nico que tendr&#xE1;s que hacer para acceder a tu nueva web ser&#xE1; ir a la direcci&#xF3;n &apos;<a href="http://nombre-usuario.github.io" target="_blank">http://nombre-usuario.github.io</a>&apos; y listo.</p>
+<p>Ahora cuando quieras modificar la p&#xE1;gina web tendr&#xE1;s que clonar el repositorio a tu m&#xE1;quina:</p>
+<p><code>~ $ git clone https://github.com/usuario/usuario.github.io</code> Si est&#xE1;s en Linux.</p>
+<p>O simplemente accediendo al apartado de clonar repositorio en GitHub Desktop si est&#xE1;s usando esta opci&#xF3;n.</p>
+<p>Cuando lo tengas clonado, modifica, a&#xF1;ade o elimina todo lo que necesites y haz un push para aplicar los cambios:</p>
+<p><code>~ $ git push -u origin master</code> Si est&#xE1;s en Linux.</p>
+<p>O sincronizando el repositorio si est&#xE1;s usando GitHub Desktop.</p>
+<h3 id="c&#xF3;mo-utilizar-gh-pages-de-repositorios">C&#xF3;mo utilizar gh-pages de repositorios</h3>
+<p>Si lo que quieres es hacer una p&#xE1;gina personalizada para tu repositorio tendr&#xE1;s que crear una rama hu&#xE9;rfana en el repositorio y meter los archivos de la p&#xE1;gina a trav&#xE9;s de esa rama.
+Para acceder a la p&#xE1;gina web del repositorio tendr&#xE1;s que entrar en la direcci&#xF3;n &apos;<a href="https://usuario.github.io/repositorio" target="_blank">https://usuario.github.io/repositorio</a>&apos;.</p>
+<p>Para crear una rama hu&#xE9;rfana puedes utilizar el comando:
+ <code>~ $ git checkout --orphan &apos;nombre_rama&apos;</code></p>
 
                                 
                                 </section>
@@ -265,8 +282,12 @@
 
             
                 
+                <a href="chapter4.html" class="navigation navigation-prev " aria-label="Previous page: Lenguaje Markdown">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Instalación de NodeJS">
+                
+                <a href="chapter6.html" class="navigation navigation-next " aria-label="Next page: Cloud 9">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -277,7 +298,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introducción","level":"1.1","depth":1,"next":{"title":"Instalación de NodeJS","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-02-20T13:29:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-20T13:31:45.142Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GH-Pages","level":"1.6","depth":1,"next":{"title":"Cloud 9","level":"1.7","depth":1,"path":"chapter6.md","ref":"chapter6.md","articles":[]},"previous":{"title":"Lenguaje Markdown","level":"1.5","depth":1,"path":"chapter4.md","ref":"chapter4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5.md","mtime":"2017-02-20T13:29:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-20T13:31:45.142Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

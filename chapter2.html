@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introducción · GitBook</title>
+        <title>Instalación de Github Desktop, Git, Hub y GitBook · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="chapter3.html" />
     
+    
+    <link rel="prev" href="chapter1.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -113,7 +115,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="chapter2.html">
+        <li class="chapter active" data-level="1.3" data-path="chapter2.html">
             
                 <a href="chapter2.html">
             
@@ -221,7 +223,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introducción</a>
+        <a href="." >Instalación de Github Desktop, Git, Hub y GitBook</a>
     </h1>
 </div>
 
@@ -236,8 +238,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="tareas-iniciales">Tareas Iniciales</h1>
-<p>En este libro ser&#xE1;n descritas algunas de las tareas b&#xE1;sicas para poder empezar el desarrollo de las pr&#xE1;cticas de la asignatura Procesadores de Lenguajes. Algunas de estas tareas son: Instalaci&#xF3;n de herramientas necesarias, apertura de cuentas en servicios, entre otros.</p>
+                                <h1 id="instalaci&#xF3;n-de-git-hub-y-gitbook-github-desktop">Instalaci&#xF3;n de Git, Hub y GitBook, Github Desktop</h1>
+<h3 id="git">Git</h3>
+<p>Git es un software de control de versiones pensado para la eficiencia y la confiabilidad del mantenimiento de versiones para aplicaciones que tengan un gran n&#xFA;mero de archivos de c&#xF3;digo fuente.</p>
+<p>Para instalar esta aplicaci&#xF3;n desde linux s&#xF3;lo tendremos que utilizar el comando:<br><code>~ $ yum install git-core</code> o <code>~ $ apt-get install git</code></p>
+<p>Si est&#xE1;s en Windows s&#xF3;lo tienes que ir a su <a href="https://git-scm.com/downloads" target="_blank">p&#xE1;gina web</a> descargar el instalador, ejecutarlo y seguir las instrucciones.</p>
+<h3 id="hub">Hub</h3>
+<p>Hub es una herramienta de l&#xED;nea de comandos que extiende la funcionalidad de git y hace m&#xE1;s facil trabajar con Github. M&#xE1;s informaci&#xF3;n, junto con pasos de instalaci&#xF3;n  para GNU/Linux, Windows y Mac OS se puede conseguir en su repositorio: <a href="https://github.com/github/hub" target="_blank">https://github.com/github/hub</a>.</p>
+<h3 id="gitbook">GitBook</h3>
+<p>Gitbook es una herramienta y una librer&#xED;a de node.js que utiliza Github y el lenguaje Markdown para crear libros de cualquier tipo: Documentaci&#xF3;n, FAQs o incluso, si se quisiera, literatura. Se puede trabajar con &#xE9;l con la herramienta git, permitiendo el control de versiones y el trabajo colaborativo. </p>
+<p>Para instalar:</p>
+<p><code>npm install gitbook-cli -g</code></p>
+<p><img src="assets/npmgitbook.jpg" alt=""></p>
+<p>Para crear un nuevo Gitbook:</p>
+<p><code>gitbook init [./directorio]</code></p>
+<p><img src="assets/gitbookinit.jpg" alt=""></p>
+<p><code>gitbook build</code></p>
+<p><img src="assets/gitbookbuild.jpg" alt=""></p>
+<p> <code>gitbook serve</code></p>
+<p>En el fichero SUMMARY.md pondremos los cap&#xED;tulos de nuestro libro junto con la ruta al correspondiente fichero .md:</p>
+<p><img src="assets/summary.jpg" alt=""></p>
+<h3 id="github-desktop">Github Desktop</h3>
+<p>Github Desktop es una aplicaci&#xF3;n, como su nombre indica, de escritorio que te permite acceder a todas las funcionalidades de github a trav&#xE9;s de una bonita interfaz gr&#xE1;fica.</p>
+<p>Para instalarla s&#xF3;lo tienes que ir a su <a href="https://desktop.github.com/" target="_blank">p&#xE1;gina web</a> descargar el instalador, ejecutarlo y seguir las instrucciones.</p>
+<p>Una vez lo hayas instalado podr&#xE1;s clonar tus repositorios, crear nuevos, sincronizar repositorios con los commits locales y b&#xE1;sicamente cualquier cosa que pod&#xED;as hacer desde la linea de comandos.</p>
 
                                 
                                 </section>
@@ -265,8 +289,12 @@
 
             
                 
+                <a href="chapter1.html" class="navigation navigation-prev " aria-label="Previous page: Instalación de NodeJS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Instalación de NodeJS">
+                
+                <a href="chapter3.html" class="navigation navigation-next " aria-label="Next page: Instalación de Pandoc y Atoms">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -277,7 +305,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introducción","level":"1.1","depth":1,"next":{"title":"Instalación de NodeJS","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-02-20T13:29:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-20T13:31:45.142Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Instalación de Github Desktop, Git, Hub y GitBook","level":"1.3","depth":1,"next":{"title":"Instalación de Pandoc y Atoms","level":"1.4","depth":1,"path":"chapter3.md","ref":"chapter3.md","articles":[]},"previous":{"title":"Instalación de NodeJS","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2.md","mtime":"2017-02-20T13:29:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-20T13:31:45.142Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
