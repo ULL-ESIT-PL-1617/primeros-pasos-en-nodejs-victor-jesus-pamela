@@ -1,7 +1,7 @@
 {
-  "name": "gitbook-boilerplate",
+  "name": "primeros-pasos-en-nodejs-victor-jesus-pamela",
   "version": "0.0.1",
-  "description": "GitBook Boilerplate",
+  "description": "PL - Práctica Primeros Pasos en NodeJS",
   "main": "index.js",
   "scripts": {
     "generate-gitbook": "./scripts/losh generate-gitbook",
