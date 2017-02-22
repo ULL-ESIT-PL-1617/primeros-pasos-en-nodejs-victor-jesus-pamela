@@ -1,13 +1,13 @@
-# GitBook Boilerplate
+# Primeros Pasos NodeJS
 
 # Installation
 
 ```shell
 cd ~/code
 
-git clone https://github.com/enten/gitbook-boilerplate.git awesome-project
+git clone https://github.com/ULL-ESIT-PL-1617/primeros-pasos-en-nodejs-victor-jesus-pamela.git 
 
-cd awesome-project
+cd primeros-pasos-en-nodejs-victor-jesus-pamela
 
 rm -fr .git
 
