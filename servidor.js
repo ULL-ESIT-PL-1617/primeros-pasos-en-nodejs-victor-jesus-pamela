@@ -1,43 +1,21 @@
-var express = require('express')
-var app = express()
-var path = require('path');
+var express = require("express");
+var app = express();
+var path = require("path");
 
-// view engine setup
-app.set('views', path.join(__dirname));
+//view engine setup
+app.set('views', path.join(__dirname) + '/gh-pages');
 app.set('view engine', 'ejs');
 
-app.use(express.static('assetss'));
+app.use(express.static(__dirname + '/gh-pages'));
 
 app.get('/', function (req, res) {
-  //res.send('Hello World!')
-  res.render('index', { title: 'Express' });
-})
-
-/*
- var router = express.Router();
-  module.exports = router; 
-  test
-*/
-app.get('/chuchu', function (req, res) {
-  //res.send('Hello Chuchu!')
-  res.render('index', { title: 'Chuchu' });
-})
-
-app.get('/cat', function (req, res) {
-  res.send('Got a GET request'+
-    '<br/><img src="kitten.jpg" />'
-  );
-})
-
-app.get('/dog', function (req, res) {
-  res.sendFile(path.join(__dirname, 'public/dog.jpg'));
+    res.render('index', { title: 'Index' });
 });
 
-var server = app.listen(8080, function () {
-
-  var host = server.address().address
-  var port = server.address().port
-
-  console.log('Example app listening at http://%s:%s', host, port)
-
+var server = app.listen(8080, function(){
+        var host = server.address().address;
+        var port = server.address().port;
+        
+        console.log('Listening to http://%s:%s', host, port);
+    
 })
